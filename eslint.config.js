@@ -12,9 +12,10 @@ export default [
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        browser: true,
+        browser: 'readonly',
         node: 'readonly',
         process: 'readonly',
+        console: 'writable',
       },
     },
     plugins: {
