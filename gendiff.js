@@ -1,5 +1,6 @@
 import { Command } from 'commander';
 import parseFile from './fileParser.js';
+import genDiff from './genDiffFunc.js';
 
 const program = new Command();
 
@@ -14,8 +15,8 @@ program
             const fileData1 = parseFile(filepath1);
             const fileData2 = parseFile(filepath2);
 
-            console.log('File 1 data:', fileData1);
-            console.log('File 2 data:', fileData2);
+            const diff = genDiff(fileData1, fileData2);
+            console.log(diff);
             console.log(`Selected format: ${options.format}`);
         } catch (error) {
             console.error(`Error: ${error.message}`);
