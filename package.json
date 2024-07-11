@@ -8,7 +8,6 @@
     "gendiff": "./bin/gendiff.js"
   },
   "scripts": {
-    "install": "npm ci",
     "gendiff": "node ./bin/gendiff.js",
     "lint-fix": "npx eslint . --fix",
     "test": "jest",
@@ -28,6 +27,8 @@
   "homepage": "https://github.com/Woronokin/frontend-project-46#readme",
   "dependencies": {
     "commander": "^12.1.0",
+    "glob": "^10.4.1",
+    "inflight": "^1.0.6",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

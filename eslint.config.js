@@ -18,11 +18,8 @@ export default [
         console: 'writable',
       },
     },
-    plugins: {
-      prettier: prettierPlugin,
-    },
     rules: {
-      'prettier/prettier': 'error',
+      'constructor-super': 'off',
     },
   },
 ];
