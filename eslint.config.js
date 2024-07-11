@@ -7,7 +7,7 @@ export default [
   prettier,
   {
     files: ['**/*.js'],
-    ignores: ['node_modules/', 'dist/', 'build/', '*.min.js', 'coverage/'],s
+    ignores: ['node_modules/', 'dist/', 'build/', '*.min.js', 'coverage/'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
