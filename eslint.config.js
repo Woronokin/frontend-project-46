@@ -12,8 +12,8 @@ export default [
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        browser: 'readonly',
-        node: 'readonly',
+        browser: true,
+        node: true,
         process: 'readonly',
         console: 'writable',
       },

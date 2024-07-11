@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import program from '../gendiff.js';
+import program from '../src/gendiff.js';
 
 program.parse(process.argv);
