@@ -10,6 +10,10 @@
 Вычислитель отличий – это программа, которая сравнивает две структуры данных и показывает разницу между ними.
 
 ### Демонстрация работы программы
-#### :white_check_mark: Сравнение двух файлов формата JSON (asciinema):
+#### :white_check_mark: Сравнение двух файлов формата json (asciinema):
 
 [![asciicast](https://asciinema.org/a/v4trrMLif86eDpVGFzcU5IX8q.svg)](https://asciinema.org/a/v4trrMLif86eDpVGFzcU5IX8q)
+
+#### :white_check_mark: Сравнение двух файлов формата yaml (asciinema):
+
+[![asciicast](https://asciinema.org/a/9ij0Knhcp0qr6lv1LX22v45Tt.svg)](https://asciinema.org/a/9ij0Knhcp0qr6lv1LX22v45Tt)

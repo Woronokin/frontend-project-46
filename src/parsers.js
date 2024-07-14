@@ -4,8 +4,8 @@ import yaml from 'js-yaml';
 
 const parsers = {
   '.json': JSON.parse,
-  '.yaml': yaml.safeLoad,
-  '.yml': yaml.safeLoad,
+  '.yaml': yaml.load,
+  '.yml': yaml.load,
 };
 
 const parseFile = (filepath) => {

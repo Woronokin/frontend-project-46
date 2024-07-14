@@ -5,7 +5,8 @@ install:
 
 gendiff:
 	./bin/gendiff.js $(file1) $(file2)
-	@@ -7,4 +10,16 @@ lint:
+	
+lint:
 	npx eslint .
 
 lint-fix:
