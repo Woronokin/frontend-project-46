@@ -1,47 +1,27 @@
-import fs from 'fs';
-import yaml from 'js-yaml';
+import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
-import { test, expect } from '@jest/globals';
-import genDiff from '../src/genDiffFunc.js';
+import { test, expect, describe } from '@jest/globals';
+import genDiff from '../src/index.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const getFixturePath = (filename) =>
   path.join(__dirname, '..', '__fixtures__', filename);
-const readFile = (filename) =>
-  fs.readFileSync(getFixturePath(filename), 'utf-8');
+const readFixture = (filename) =>
+  readFileSync(getFixturePath(filename), 'utf-8').trim();
 
-test('gendiff for flat json files', () => {
-  const expectedResult = `{
-  - follow: false
-    host: hexlet.io
-  - proxy: 123.234.53.22
-  - timeout: 50
-  + timeout: 20
-  + verbose: true
-}`;
+const fileFormats = ['json', 'yaml', 'yml'];
+const outputFormats = ['stylish'];
 
-  const fileData1 = JSON.parse(readFile('file1.json'));
-  const fileData2 = JSON.parse(readFile('file2.json'));
-
-  const diff = genDiff(fileData1, fileData2);
-  expect(diff).toBe(expectedResult);
-});
-
-test('gendiff for flat yaml files', () => {
-  const expectedResult = `{
-  - follow: false
-    host: hexlet.io
-  - proxy: 123.234.53.22
-  - timeout: 50
-  + timeout: 20
-  + verbose: true
-}`;
-
-  const fileData1 = yaml.load(readFile('file1.yaml'));
-  const fileData2 = yaml.load(readFile('file2.yaml'));
-
-  const diff = genDiff(fileData1, fileData2);
-  expect(diff).toBe(expectedResult);
+describe('genDiff testing', () => {
+  test.each(fileFormats)('genDiff testing with two %p-files', (format) => {
+    const filepath1 = getFixturePath(`file1.${format}`);
+    const filepath2 = getFixturePath(`file2.${format}`);
+    outputFormats.forEach((outputFormat) => {
+      const expectedResult = readFixture(`${outputFormat}TestResult.txt`);
+      const actualResult = genDiff(filepath1, filepath2, outputFormat).trim();
+      expect(actualResult).toEqual(expectedResult);
+    });
+  });
 });

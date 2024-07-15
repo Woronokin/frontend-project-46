@@ -17,3 +17,7 @@
 #### :white_check_mark: Сравнение двух файлов формата yaml (asciinema):
 
 [![asciicast](https://asciinema.org/a/9ij0Knhcp0qr6lv1LX22v45Tt.svg)](https://asciinema.org/a/9ij0Knhcp0qr6lv1LX22v45Tt)
+
+#### :white_check_mark: Рекурсивное сравнение двух файлов формата json - yaml (asciinema):
+
+[![asciicast](https://asciinema.org/a/CDcMvKxl89etmynO4oaYCWfI9.svg)](https://asciinema.org/a/CDcMvKxl89etmynO4oaYCWfI9)
