@@ -4,7 +4,7 @@ install:
 	npm install
 
 gendiff:
-	./bin/gendiff.js $(file1) $(file2)
+	./bin/gendiff.js $(file1) $(file2) -f $(format)
 	
 lint:
 	npx eslint .

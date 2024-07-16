@@ -14,10 +14,10 @@
 
 [![asciicast](https://asciinema.org/a/v4trrMLif86eDpVGFzcU5IX8q.svg)](https://asciinema.org/a/v4trrMLif86eDpVGFzcU5IX8q)
 
-#### :white_check_mark: Сравнение двух файлов формата yaml (asciinema):
+#### :white_check_mark: Рекусрсивное сравнение двух файлов в "stylish" формате (asciinema):
 
 [![asciicast](https://asciinema.org/a/9ij0Knhcp0qr6lv1LX22v45Tt.svg)](https://asciinema.org/a/9ij0Knhcp0qr6lv1LX22v45Tt)
 
-#### :white_check_mark: Рекурсивное сравнение двух файлов формата json - yaml (asciinema):
+#### :white_check_mark: Рекурсивное сравнение двух файлов в "plain" формате (asciinema):
 
-[![asciicast](https://asciinema.org/a/CDcMvKxl89etmynO4oaYCWfI9.svg)](https://asciinema.org/a/CDcMvKxl89etmynO4oaYCWfI9)
+[![asciicast](https://asciinema.org/a/iFmW9IRaJgazi9AlwD9Uptali.svg)](https://asciinema.org/a/iFmW9IRaJgazi9AlwD9Uptali)
