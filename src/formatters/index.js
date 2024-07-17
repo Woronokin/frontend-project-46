@@ -8,7 +8,7 @@ const renderInFormat = (diffTree, format) => {
     case 'stylish':
       return stylish(diffTree);
     case 'json':
-      return JSON.stringify(diffTree, '', 1);
+      return JSON.stringify(diffTree);
     default:
       throw new Error(`Unknown format: '${format}'!`);
   }

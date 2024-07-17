@@ -9,7 +9,7 @@ const getData = (filepath) => ({
   type: path.extname(filepath).slice(1).trim(),
 });
 
-const genDiff = (filepath1, filepath2, format) => {
+const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const data1 = getData(filepath1);
   const data2 = getData(filepath2);
   const parsedData1 = parseFile(data1);

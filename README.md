@@ -21,3 +21,7 @@
 #### :white_check_mark: Рекурсивное сравнение двух файлов в "plain" формате (asciinema):
 
 [![asciicast](https://asciinema.org/a/iFmW9IRaJgazi9AlwD9Uptali.svg)](https://asciinema.org/a/iFmW9IRaJgazi9AlwD9Uptali)
+
+#### :white_check_mark: Рекурсивное сравнение двух файлов в "json" формате (asciinema):
+
+[![asciicast](https://asciinema.org/a/lyWioJXbkixI5I8J626J8tq0O.svg)](https://asciinema.org/a/lyWioJXbkixI5I8J626J8tq0O)

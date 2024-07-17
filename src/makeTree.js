@@ -29,21 +29,16 @@ const makeTree = (data1, data2) => {
     const hasKey1 = _.has(data1, key);
     const hasKey2 = _.has(data2, key);
 
-    let node;
-
     if (!hasKey1) {
-      node = nodeHandlers.added(key, value2);
-    } else if (!hasKey2) {
-      node = nodeHandlers.deleted(key, value1);
-    } else if (_.isObject(value1) && _.isObject(value2)) {
-      node = nodeHandlers.nested(key, value1, value2, makeTree);
-    } else if (!_.isEqual(value2, value1)) {
-      node = nodeHandlers.modified(key, value1, value2);
-    } else {
-      node = nodeHandlers.unmodified(key, value2);
+      return nodeHandlers.added(key, value2);
+    } if (!hasKey2) {
+      return nodeHandlers.deleted(key, value1);
+    } if (_.isObject(value1) && _.isObject(value2)) {
+      return nodeHandlers.nested(key, value1, value2, makeTree);
+    } if (!_.isEqual(value1, value2)) {
+      return nodeHandlers.modified(key, value1, value2);
     }
-
-    return node;
+    return nodeHandlers.unmodified(key, value1);
   });
 };
 
