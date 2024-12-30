@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+### Tests and linter status:
 
 [![Actions Status](https://github.com/Woronokin/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Woronokin/frontend-project-46/actions)
 [![Node CI](https://github.com/Woronokin/frontend-project-46/actions/workflows/node.js.yml/badge.svg)](https://github.com/Woronokin/frontend-project-46/actions/workflows/node.js.yml)
